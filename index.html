@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purplefolio | Portfolio for Web Developers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Personal_portfolio<span class="purple-text">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Get In Touch</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo-container">
+    <img src="me.jpg" alt="Wendel's Profile Photo" class="profile-photo">
+</div>
+            <div class="welcome-badge">Hi! I'm Wendel B, Tuazon</div>
+            <h1>UI DESIGNER<span class="purple-text">.</span></h1>
+            <p> i am a UI DESIGNER that is eager to learn and grow in the field.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">Browse Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="sub-title">About Me</span>
+                <h2>Passionate about creating a good ui interface.</h2>
+                <p>My journey as a UI designer started when i first notice that i like being an artist and i applied it here in coding.</p>
+                <p>I focus heavily on pixel-perfect implementations, performance optimizations, and writing clean, structured code that scales beautifully.</p>
+            </div>
+            
+            <div class="skills-box">
+                <h3>Technical Skills</h3>
+                <div class="skills-category">
+                    <h4>Frontend</h4>
+                    <div class="tag-cloud">
+                        <span>JavaScript</span><span>ReactJS</span><span>NextJS</span><span>HTML5</span><span>CSS3</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>UI / UX Design</h4>
+                    <div class="tag-cloud">
+                        <span>Figma</span><span>Wireframing</span><span>Prototyping</span><span>Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <div class="section-header">
+            <span class="sub-title">Portfolio</span>
+            <h2>Selected Projects</h2>
+        </div>
+        
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <span class="img-placeholder">TaskFlow UI</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                    <h3>TaskFlow System</h3>
+                    <p>Task management system with drag-and-drop, real-time collaboration, and responsive layouts.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <span class="img-placeholder">EcoCart UI</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                    <h3>EcoCart Platform</h3>
+                    <p>E-commerce platform promoting eco-friendly products with secure payment integration.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <span class="img-placeholder">Weather Dashboard UI</span>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid</span>
+                    </div>
+                    <h3>SkyCast Weather</h3>
+                    <p>A minimalist user interface concept featuring dynamic backgrounds based on location weather state data.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="contact-card">
+            <h2>Let's build something awesome together</h2>
+            <p>Have an exciting project in mind? Drop a line below or connect through my networks!</p>
+            
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="social-link">📧 your.email@example.com</a>
+                <a href="https://github.com" target="_blank" class="social-link">💻 GitHub Profile</a>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <textarea rows="4" placeholder="Tell me about your project..." required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Purplefolio. All Rights Reserved.</p>
+            <p>Made with 💜 for Class Submission</p>
+        </div>
+    </footer>
+
+</body>
+</html>
