@@ -344,6 +344,7 @@ a {
     border-radius: var(--radius-lg);
     padding: 4rem 3rem;
     text-align: center;
+    
 }
 
 .contact-card h2 {
@@ -454,3 +455,6 @@ footer {
         height: 18px !important;  
     }
 }
+#contact {
+    scroll-margin-top: 120px; 
+    margin-bottom: 2rem;       
