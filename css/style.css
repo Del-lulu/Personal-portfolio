@@ -1,6 +1,5 @@
-/* --- ROOT THEME VARIABLES --- */
 :root {
-    --bg-dark: #000000;       /* Changed to pure black */
+    --bg-dark: #000000;
     --card-bg: #120e1d;
     --accent-purple: #7c3aed;
     --accent-light: #a78bfa;
@@ -11,7 +10,6 @@
     --radius-sm: 12px;
 }
 
-/* --- BASE SETUP --- */
 * {
     margin: 0;
     padding: 0;
@@ -38,12 +36,11 @@ a {
     padding: 6rem 2rem;
 }
 
-/* --- NAVIGATION BAR --- */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Adjusted for pure black blend */
+    background-color: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     display: flex;
@@ -96,7 +93,6 @@ a {
     border-color: var(--accent-purple);
 }
 
-/* --- HERO SECTION --- */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -105,10 +101,9 @@ a {
     text-align: center;
     padding: 6rem 1.5rem 2rem 1.5rem;
     position: relative;
-    background: radial-gradient(circle at 50% 40%, rgba(124, 58, 237, 0.12) 0%, rgba(0, 0, 0, 0) 50%); /* Adjusted for pure black blend */
+    background: radial-gradient(circle at 50% 40%, rgba(124, 58, 237, 0.12) 0%, rgba(0, 0, 0, 0) 50%);
 }
 
-/* New Profile Photo Styling */
 .profile-photo-container {
     display: flex;
     justify-content: center;
@@ -158,7 +153,6 @@ a {
     gap: 1rem;
 }
 
-/* --- BUTTONS --- */
 .btn {
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -190,7 +184,6 @@ a {
     border-color: #4c327a;
 }
 
-/* --- PROJECT CARDS SECTION --- */
 .section-header {
     margin-bottom: 3.5rem;
 }
@@ -281,9 +274,8 @@ a {
     font-weight: 600;
 }
 
-/* --- ABOUT SECTION --- */
 .about-section {
-    background-color: #000000;         /* Changed to pure black */
+    background-color: #000000;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -345,7 +337,6 @@ a {
     font-size: 0.85rem;
 }
 
-/* --- CONTACT BENTO CARD --- */
 .contact-card {
     background: radial-gradient(circle at top right, rgba(124, 58, 237, 0.1), transparent), var(--card-bg);
     border: 1px solid var(--border-color);
@@ -366,7 +357,6 @@ a {
     margin: 0 auto 1.5rem auto;
 }
 
-/* Added Requirement Links Setup */
 .contact-links {
     display: flex;
     justify-content: center;
@@ -418,7 +408,6 @@ a {
     width: 100%;
 }
 
-/* --- FOOTER --- */
 footer {
     border-top: 1px solid var(--border-color);
     padding: 2rem 0;
@@ -432,7 +421,6 @@ footer {
     padding: 0 2rem;
 }
 
-/* --- RESPONSIVE DEGRADATION --- */
 @media (max-width: 900px) {
     .navbar .nav-links, .navbar .nav-cta {
         display: none;
@@ -456,5 +444,12 @@ footer {
     }
     .form-row {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    footer div a img {
+        width: 18px !important;   
+        height: 18px !important;  
     }
 }
