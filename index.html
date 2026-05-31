@@ -116,38 +116,46 @@
             <p>Have an exciting project in mind? Drop a line below or connect through my networks!</p>
             
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="social-link">📧 your.email@example.com</a>
-                <a href="https://github.com" target="_blank" class="social-link">💻 GitHub Profile</a>
+                <!-- Inupdate sa totoong email at github mo -->
+                <a href="mailto:pidellangmalakas@gmail.com" class="social-link"> pidellangmalakas@gmail.com
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 24px; height: 24px;">
+                
+                </a>
+                <a href="https://github.com/Del-lulu" target="_blank" class="social-link">💻 GitHub Profile</a>
             </div>
 
+            <!-- Nilagyan ng name attributes para sa data inputs -->
             <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
                 <div class="form-row">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
-                <textarea rows="4" placeholder="Tell me about your project..." required></textarea>
+                <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
     </section>
+
+    <!-- FIXED FOOTER SECTION -->
     <footer style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--border-color); margin-top: 4rem;">
-            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-                <a href="mailto:pidellangmalakas@gmail.com" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 24px; height: 24px;">
-            Gmail
-        </a>
-                
-                <a href="https://www.facebook.com/WendelTuazonnn/" target="_blank" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 24px; height: 24px;">
-            Facebook
-        </a>
-                
-                <a href="https://www.instagram.com/delll_lulu?igsh=NWJ2aTRwbXZuNXBy" target="_blank" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 24px; height: 24px;">
-            Instagram
-        </a>
-        </div>  
-            </footer>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <a href="mailto:pidellangmalakas@gmail.com" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 24px; height: 24px;">
+                Gmail
+            </a>
+            
+            <!-- Inayos ang dating <<a gamit ang tamang <a> tag -->
+            <a href="https://www.facebook.com/WendelTuazonnn/" target="_blank" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 24px; height: 24px;">
+                Facebook
+            </a>
+            
+            <a href="https://www.instagram.com/delll_lulu?igsh=NWJ2aTRwbXZuNXBy" target="_blank" style="text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 24px; height: 24px;">
+                Instagram
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>
