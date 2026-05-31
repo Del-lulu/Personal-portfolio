@@ -111,11 +111,11 @@ a {
 }
 
 .profile-photo {
-    width: 160px;          
-    height: 160px;         
+    width: 220px;          
+    height: 220px;         
     border-radius: 50%;
     background: linear-gradient(135deg, #1f1733 0%, #3b2a5c 100%);
-    border: 3px solid var(--accent-purple);
+    border: 3px solid var(-- gray-700);
     object-fit: cover;
     object-position: center;
 }
